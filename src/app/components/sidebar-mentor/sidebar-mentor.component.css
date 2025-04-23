@@ -1,0 +1,80 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Roboto';
+    transition: width 0.3s ease;
+    filter: drop-shadow(0px 1px 1px #818181);
+    border-radius: 4px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 80px;
+  }
+
+  
+  .toggle-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+  }
+  
+  .nav-links li {
+    padding: 15px 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ECECEC;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .nav-links i{
+    width: 30px;
+  }
+
+ /* .collapsed-button {
+    border: 1px solid gray;
+    border-radius: 16px;
+  }
+
+  /* Collapsed Sidebar */
+  /* .collapsed {
+    width: 80px;
+  }
+  
+  .collapsed .nav-links a span {
+    display: none;
+  }
+  
+  .collapsed .nav-links a {
+    justify-content: center;
+  }
+  
+  .collapsed .sidebar-header h2 {
+    display: none;
+  } */ 
+  

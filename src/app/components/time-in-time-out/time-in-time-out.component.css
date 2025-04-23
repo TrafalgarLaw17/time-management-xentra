@@ -1,0 +1,64 @@
+.tito-container {
+    background: conic-gradient(from 77deg at left bottom, #ABE4AF 0%, #D0F0C0 100%, #A6D3A0 50% );
+    width: auto;
+    height: 100vh;
+}
+
+.welcome{
+    font-family: 'Roboto';
+}
+
+.access-level{
+    color: #9E8BC1;
+}
+
+.main-content{
+    font-family: 'Roboto';
+}
+
+.dot-am {
+    height: 15px;
+    width: 15px;
+    background-color: #9C9C9C;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot-pm {
+    height: 15px;
+    width: 15px;
+    background-color: #F4AE4D;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .time-in-button {
+    background-color: #62C887;
+    border-radius: 6px;
+    margin-left: 110px;
+    font-family: 'Roboto';
+  }
+
+  .time-in-button:hover {
+    background-color: #72DA98;
+  }
+
+  .time-in-button:active {
+    background-color: #41C572;
+  }
+
+  .time-out-button {
+    background-color: #DBDBDB;
+    border-radius: 6px;
+    margin-left: 110px;
+    font-family: 'Roboto';
+    color: #1f1f1f;
+  }
+
+  .time-out-button:hover {
+    background-color: #EBEBEB;
+  }
+
+  .time-out-button:active {
+    background-color: #CCCCCC;
+  }
