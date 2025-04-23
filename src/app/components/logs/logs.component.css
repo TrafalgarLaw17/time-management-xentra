@@ -1,0 +1,37 @@
+*{
+    font-family: 'Roboto';
+}
+.logs-header{
+    width: 1388px;
+    margin-left: 302px;
+}
+.logs-content{
+    background-color: #efefef;
+    width: auto;
+    height: 140vh;
+}
+
+
+.search-container, .filter-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  
+  .search-input, .filter-input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem; 
+    font-size: 1.2rem;
+  }
+
+  .table-container{
+    width: 1050px;
+  }

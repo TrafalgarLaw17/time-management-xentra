@@ -1,0 +1,56 @@
+<div class="logs-content">
+    <div class="logs-header bg-white flex sticky top-0 z-10">
+        <h1 class="ml-8 p-6 font-bold text-2xl">Logs</h1>
+        <div class="profile-container flex ml-auto">
+            <img src="../../../assets/images/profile-icon.png" class="w-16 h-16 mt-2">
+            <h5 class="profile mr-16 ml-4 mt-8">Welcome, Ninja</h5>
+        </div>
+    </div>
+    <div class="main-content bg-white ml-96 overflow-auto rounded-xl mt-14 w-9/12 p-12 pb-56">
+        <div class="input-container flex flex-row gap-8">
+            <div class="search-container flex items-center border border-gray-300 shadow rounded-lg w-5/12 ml-16">
+                <img src="../../../assets/images/search-icon.png" class="w-4 h-4 mx-2">
+                 <input
+                   placeholder="Search"
+                   class="search-input"
+                 />
+            </div>
+            <div class="filter-container flex items-center border border-gray-300 shadow rounded-lg">
+                <select name="logs" id="logs" class="filter-input">
+                    <option value="filter">Filter</option>
+                    <option value="account">Account</option>
+                    <option value="activity">Activity</option>
+                    <option value="date-time">Date and Time</option>
+                </select>
+            </div>
+        </div>
+        <div class="table-container flex items-center border border-gray-300 shadow rounded-lg mt-16 ml-16">
+            <table class="w-full">
+              <thead>
+                <tr>
+                  <th class="pl-8 py-4 font-medium text-xl text-left">Account</th>
+                  <th class="pl-44 py-4 font-medium text-xl text-left">Activity</th>
+                  <th class="pl-60 py-4 font-medium text-xl text-left">Date and Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border border-gray-200">
+                  <td class="pl-8 py-4 font-normal text-lg">Michael</td>
+                  <td class="pl-44 py-4 font-normal text-lg">Turned in Task No.4</td>
+                  <td class="pl-60 py-4 font-normal text-lg">2025/04/12 00:01:49</td>
+                </tr>
+                <tr class="border border-gray-200"> 
+                    <td class="pl-8 py-4 font-normal text-lg">Michael</td>
+                    <td class="pl-44 py-4 font-normal text-lg">Timed In</td>
+                    <td class="pl-60 py-4 font-normal text-lg">2025/04/11 20:00:00</td>
+                </tr>
+                <tr class="border border-gray-200">
+                    <td class="pl-8 py-4 font-normal text-lg">Michael</td>
+                    <td class="pl-44 py-4 font-normal text-lg">Logged In</td>
+                    <td class="pl-60 py-4 font-normal text-lg">2025/04/11 19:59:40</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>          
+    </div>
+</div>

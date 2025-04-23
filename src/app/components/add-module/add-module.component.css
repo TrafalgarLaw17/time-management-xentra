@@ -2,17 +2,12 @@
     font-family: 'Roboto';
 }
 
-.dashboard-header{
+.add-module-header{
     width: 1388px;
     margin-left: 302px;
 }
-.dashboard-content{
+.add-module-content{
     background-color: #efefef;
     width: auto;
     height: 140vh;
 }
-
-.date-activity {
-    color: #35BA00;
-}
-

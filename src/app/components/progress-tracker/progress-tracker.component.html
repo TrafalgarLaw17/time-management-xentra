@@ -1,0 +1,81 @@
+<div class="progress-content">
+    <div class="progress-header bg-white flex sticky top-0 z-10">
+        <h1 class="ml-8 p-6 font-bold text-2xl">Progress Tracker</h1>
+        <div class="profile-container flex ml-auto">
+            <img src="../../../assets/images/profile-icon.png" class="w-16 h-16 mt-2">
+            <h5 class="profile mr-16 ml-4 mt-8">Welcome, Ninja</h5>
+        </div>
+    </div>
+    <div class="main-content bg-white ml-96 overflow-auto rounded-lg w-8/12 mt-12 p-12">
+        <div class="flex flex-row gap-8 mt-4 justify-center">
+            <div class="michael-container bg-white rounded-3xl shadow p-12">
+                <div class="michael-header flex">
+                    <img src="../../../assets/images/michael-icon.png" class="w-16 h-16 mt-2">
+                    <div class="michael-desc ml-4 mt-2 mr-32">
+                        <h3 class="text-lg font-bold">Michael Mcgee</h3>
+                        <h3 class="text-lg">Intern</h3>
+                    </div>
+                </div>   
+                <div class="michael-content mt-12">
+                    <div class="status flex">
+                        <h3 class="text-lg font-bold">Status:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #92C34F">Active</h3>
+                    </div>
+                    <div class="completed flex mt-8">
+                        <h3 class="text-lg font-bold">Completed Tasks:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #92C34F">3</h3>
+                    </div>     
+                    <div class="pending flex mt-8">
+                        <h3 class="text-lg font-bold">Pending Tasks:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #F4AE4D">1</h3>
+                    </div>     
+                    <div class="status mt-8">
+                        <h3 class="text-lg font-bold">Trainee Progress Timeline:</h3>
+                        <div class="chart-1 w-80 h-56 mt-4">
+                            <canvas
+                              baseChart
+                              [type]="timelineChartType"
+                              [data]="timelineChartData"
+                              [options]="timelineChartOptions">
+                            </canvas>
+                          </div>
+                    </div>     
+                </div>              
+            </div>
+            <div class="michelle-container bg-white rounded-3xl shadow p-12">
+                <div class="michelle-header flex">
+                    <img src="../../../assets/images/michelle-icon.png" class="w-16 h-16 mt-2">
+                    <div class="michelle-desc ml-4 mt-2 mr-32">
+                        <h3 class="text-lg font-bold">Michelle Montana</h3>
+                        <h3 class="text-lg">Intern</h3>
+                    </div>
+                </div>
+                <div class="michelle-content mt-12">
+                    <div class="status flex">
+                        <h3 class="text-lg font-bold">Status:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #A5A5A5">Unavailable</h3>
+                    </div>
+                    <div class="completed flex mt-8">
+                        <h3 class="text-lg font-bold">Completed Tasks:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #92C34F">3</h3>
+                    </div>     
+                    <div class="pending flex mt-8">
+                        <h3 class="text-lg font-bold">Pending Tasks:</h3>
+                        <h3 class="text-lg ml-8 font-bold" style="color: #F4AE4D">1</h3>
+                    </div>     
+                    <div class="status mt-8">
+                        <h3 class="text-lg font-bold">Trainee Progress Timeline:</h3>
+                        <div class="chart-1 w-80 h-56 mt-4">
+                            <canvas
+                              baseChart
+                              [type]="timelineChartType"
+                              [data]="timelineChartData"
+                              [options]="timelineChartOptions">
+                            </canvas>
+                          </div>
+                    </div>     
+                </div>     
+            </div>
+        </div>
+    </div>
+</div>
