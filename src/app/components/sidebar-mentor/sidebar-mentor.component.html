@@ -4,12 +4,12 @@
       <!-- <button class="collapsed-button w-full" (click)="toggleSidebar()">=</button> -->
     </div>
     <ul class="nav-links">
-      <li><a routerLink="/dashboard"><img src="../../../assets/images/dashboard-icon.png" class="w-8"><span>Dashboard</span></a></li>
-      <li><a routerLink="/logs"><img src="../../../assets/images/logs-icon.png" class="w-8"><span>Logs</span></a></li>
-      <li><a routerLink="/progress-tracker"><img src="../../../assets/images/progress-tracker-icon.png" class="w-8"><span>Progress Tracker</span></a></li>
-      <li><a routerLink="/add-module"><img src="../../../assets/images/add-module-icon.png" class="w-8"><span>Add Module</span></a></li>
-      <li><a routerLink="/chats"><img src="../../../assets/images/chats-icon.png" class="w-8"><span>Chats</span></a></li>
-      <li><a routerLink="/calendar"><img src="../../../assets/images/calendar-icon.png" class="w-8"><span>Calendar</span></a></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/dashboard-icon.png" class="w-8"><span>Dashboard</span></a></li>
+      <li><a routerLink="/logs" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/logs-icon.png" class="w-8"><span>Logs</span></a></li>
+      <li><a routerLink="/progress-tracker" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/progress-tracker-icon.png" class="w-8"><span>Progress Tracker</span></a></li>
+      <li><a routerLink="/add-module" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/add-module-icon.png" class="w-8"><span>Add Module</span></a></li>
+      <li><a routerLink="/chats" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/chats-icon.png" class="w-8"><span>Chats</span></a></li>
+      <li><a routerLink="/calendar" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"><img src="../../../assets/images/calendar-icon.png" class="w-8"><span>Calendar</span></a></li>
       <li class="mt-12"><a routerLink="/login"><img src="../../../assets/images/logout-icon.png" class="w-8"><span>Logout</span></a></li>
     </ul>
   </div>

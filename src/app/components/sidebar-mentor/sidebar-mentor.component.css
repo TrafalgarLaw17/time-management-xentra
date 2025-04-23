@@ -56,6 +56,11 @@
     width: 30px;
   }
 
+  .active-link{
+    background-color: #ECECEC;
+    font-weight: bold;
+  }
+
  /* .collapsed-button {
     border: 1px solid gray;
     border-radius: 16px;
