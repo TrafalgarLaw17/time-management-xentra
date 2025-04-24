@@ -1,1 +1,117 @@
-<p>chats works!</p>
+<div class="chats-content">
+    <div class="chats-header bg-white flex sticky top-0 z-10">
+        <h1 class="ml-8 p-6 font-bold text-2xl">Chats</h1>
+        <div class="profile-container flex ml-auto">
+            <img src="../../../assets/images/profile-icon.png" class="w-16 h-16 mt-2">
+            <h5 class="profile mr-16 ml-4 mt-8">Welcome, Ninja</h5>
+        </div>
+    </div>
+    <div class="main-content bg-white ml-96 overflow-auto rounded-xl mt-14 w-9/12 p-12 pb-16">
+        <div class="profile-container flex flex-row">
+            <img src="../../../assets/images/profile-icon.png" class="w-16 h-16">
+            <span class="active-status absolute m-12"></span>
+            <h5 class="profile mr-16 ml-4 mt-6">Ninja K. Epsey</h5>
+            <button><img src="../../../assets/images/more-icon-horizontal.png" class="w-4 h-1 mt-2 ml-16"></button>
+            <img src="../../../assets/images/matthew-icon.png" class="w-16 h-16 ml-32">
+            <div class="flex flex-col">
+                <h5 class="profile mr-16 ml-6 mt-4">Matthew Michael Justin</h5>
+                <div class="ml-6">
+                    <span class="active-status"></span>
+                    <h5 class="profile mr-16 ml-6 text-sm">Active Now</h5>
+                </div>
+            </div>
+            <div class="icon-buttons gap-8 ml-16 flex-row flex">
+                <button class="icon-button rounded-full p-4 px-4"><img src="../../../assets/images/search-icon.png" class="w-8 h-8"></button>
+                <button class="icon-button rounded-full p-4 px-4"><img src="../../../assets/images/video-icon.png" class="w-12 h-8"></button>
+                <button class="icon-button rounded-full p-4 px-4"><img src="../../../assets/images/call-icon.png" class="w-8 h-8"></button>
+            </div>
+        </div>
+        <div class="flex mt">
+            <div class="search-container flex items-center border border-gray-300 shadow rounded-md w-4/12 mt-4">
+                <img src="../../../assets/images/search-icon.png" class="w-4 h-4 mx-2">
+                 <input
+                   placeholder="Search people, contacts, messages"
+                   class="search-input w-full p-2"
+                 />
+            </div>
+            <span class="line-separator bg-black w-7/12 h-0.5 mt-8 ml-16"></span>
+        </div>
+        <div class="chats-body mt-12 flex">
+            <div class="left-side flex flex-col">
+                <div class="icons flex gap-12">
+                    <button><img src="../../../assets/images/chat-icon.png" class="w-8 h-8 mx-2"></button>
+                    <button><img src="../../../assets/images/video-icon.png" class="w-12 h-8 mx-2"></button>
+                    <button><img src="../../../assets/images/people-icon.png" class="w-8 h-8 mx-2"></button>
+                    <button><img src="../../../assets/images/notification-icon.png" class="w-8 h-8 mx-2"></button>
+                </div>
+                <span class="line-separator bg-black w-96 h-0.5 mt-8"></span>
+                <div class="chat-history mt-6">
+                  <div class="matthew-chat mb-6 flex rounded-md p-4">
+                     <img src="../../../assets/images/matthew-icon.png" class="w-12 h-12 ml-2">
+                     <div class="flex flex-col ml-4">
+                        <h5 class="font-bold">Matthew Michael Justin</h5>
+                        <p class="text-md ml-2">Good job!</p>
+                     </div> 
+                     <p class="text-sm mt-0.5 ml-auto">12:31 AM</p>
+                  </div>
+                  <div class="john-chat mb-8 flex">
+                     <img src="../../../assets/images/john-icon.png" class="w-12 h-12 ml-6">
+                     <div class="flex flex-col ml-4">
+                        <h5>John Robertson</h5>
+                        <p class="text-md ml-2">I'll stop by the office later</p>
+                     </div> 
+                     <p class="text-sm mt-0.5 ml-16">Wed</p> 
+                  </div>
+                  <div class="bryan-chat flex">
+                     <img src="../../../assets/images/bryan-icon.png" class="w-12 h-12 ml-6">
+                     <div class="flex flex-col ml-4">
+                        <h5>Bryan McMillan</h5>
+                        <p class="text-md ml-2">I'm taking a sick leave</p>
+                     </div> 
+                     <p class="day text-sm mt-0.5">Wed</p> 
+                  </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="mb-6 flex rounded-md">
+                    <img src="../../../assets/images/matthew-icon.png" class="w-12 h-12 ml-44">
+                    <div class="flex flex-col ml-4">
+                       <h5 class="text-sm mt-2">Matthew, 12:30 AM</h5>
+                       <div class="chat-box p-4 rounded-md shadow mt-1">
+                        <p class="text-sm">How was the project?</p>
+                       </div>
+                    </div> 
+                </div>
+                <div class="mb-6 flex rounded-md">
+                    <div class="your-chat flex flex-col">
+                       <h5 class="text-sm mt-2 ml-20">12:30 AM</h5>
+                       <div class="your-chat-box p-4 rounded-md shadow mt-1">
+                        <p class="text-sm text-white">Going smoothly, sir</p>
+                       </div>
+                    </div> 
+                </div>
+                <div class="mb-6 flex rounded-md">
+                    <img src="../../../assets/images/matthew-icon.png" class="w-12 h-12 ml-44">
+                    <div class="flex flex-col ml-4">
+                       <h5 class="text-sm mt-2">Matthew, 12:31 AM</h5>
+                       <div class="chat-box p-4 rounded-md shadow mt-1">
+                        <p class="text-sm">Good job!</p>
+                       </div>
+                    </div> 
+                </div>
+                <div class="send-group mt-32 flex">
+                    <div class="button-group">
+                        <button><img src="../../../assets/images/add-button-icon.png" class="w-8 h-8 ml-32"></button>
+                        <button><img src="../../../assets/images/gif-icon.png" class="w-8 h-8 mx-4"></button>
+                        <button><img src="../../../assets/images/upload-icon.png" class="w-8 h-8"></button>
+                    </div>
+                    <div class="type-box w-6/12 flex mx-6 rounded-md shadow-md">
+                        <button><img src="../../../assets/images/emoji-icon.png" class="w-8 h-8 ml-2"></button>
+                        <input type="text" class="outline-0 bg-transparent ml-4">
+                    </div>
+                    <button><img src="../../../assets/images/send-icon.png" class="w-8 h-8 ml-2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

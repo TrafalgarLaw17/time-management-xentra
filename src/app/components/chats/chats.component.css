@@ -1,0 +1,53 @@
+*{
+    font-family: 'Roboto';
+}
+
+.chats-header{
+    width: 1388px;
+    margin-left: 302px;
+}
+.chats-content{
+    background-color: #efefef;
+    width: auto;
+    height: 140vh;
+}
+
+.active-status{
+    height: 15px;
+    width: 15px;
+    background-color: #05FA32;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.icon-button {
+    background-color: #d9d9d9;
+}
+
+.search-input {
+    outline: none;
+}
+
+.matthew-chat{
+    background-color: #B4C9EC;
+}
+
+.day{
+    margin-left: 85px;
+}
+
+.chat-box {
+    background-color: #efefef;
+}
+
+.your-chat{
+    margin-left: 600px;
+}
+
+.your-chat-box{
+    background-color: #1F91CB;
+}
+
+.type-box {
+    background-color: #efefef;
+}

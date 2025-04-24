@@ -1,0 +1,33 @@
+*{
+    font-family: 'Roboto';
+}
+
+.calendar-header{
+    width: 1388px;
+    margin-left: 302px;
+}
+.calendar-content{
+    background-color: #efefef;
+    width: auto;
+    height: 140vh;
+}
+
+.data {
+    color: #4AD051;
+}
+
+.hovered-date::after{
+    content: '1';
+}
+
+.hovered-date:hover::after{
+    content: '8';
+    background-color: #BEFFAD;
+    border-radius: 100%;
+    padding: 4px;
+}
+.hover-container {
+    position: relative;
+  }
+
+  

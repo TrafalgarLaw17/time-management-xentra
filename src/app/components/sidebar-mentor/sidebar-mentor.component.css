@@ -47,7 +47,7 @@
   }
   
   .nav-links a:hover {
-    background-color: #ECECEC;
+    background-color: #ABE4AF;
     border-radius: 5px;
     padding: 10px;
   }
@@ -57,7 +57,7 @@
   }
 
   .active-link{
-    background-color: #ECECEC;
+    background-color: #ABE4AF;
     font-weight: bold;
   }
 

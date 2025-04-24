@@ -6,4 +6,139 @@
             <h5 class="profile mr-16 ml-4 mt-8">Welcome, Ninja</h5>
         </div>
     </div>
+    <div class="main-content bg-white ml-96 overflow-auto rounded-xl mt-14 w-9/12 p-12 pb-56">
+        <div class="input-container flex flex-row gap-8">
+            <div class="search-container flex items-center border border-gray-300 shadow rounded-md w-7/12 ml-16">
+                <img src="../../../assets/images/search-icon.png" class="w-4 h-4 mx-2">
+                 <input
+                   placeholder="Search"
+                   class="search-input"
+                 />
+            </div>
+            <div class="filter-container flex items-center border border-gray-300 shadow rounded-md">
+                <select name="add-module" id="add-module-filter" class="filter-input">
+                    <option value="filter">Filter</option>
+                    <option value="status">Status</option>
+                    <option value="module-name">Module Name</option>
+                    <option value="assign-to">Assign to</option>
+                </select>
+            </div>
+            <div class="module-button-container flex items-center border border-gray-300 shadow rounded-md">
+                <img src="../../../assets/images/add-icon.png" class="px-4 w-12">
+                <button class="module-button pl-2 pr-6" (click)="openModal()">Add Module</button>
+            </div>
+        </div>
+        <div class="table-container flex items-center border border-gray-300 shadow rounded-lg mt-16 ml-16">
+            <table class="w-full">
+              <thead>
+                <tr>
+                    <th class="pl-8 py-4 font-medium text-xl text-left">#</th>
+                    <th class="pl-4 py-4 font-medium text-xl text-left">Module Name</th>
+                    <th class="pl-4 py-4 font-medium text-xl text-left">Assigned to</th>
+                    <th class="pl-4 py-4 font-medium text-xl text-left">Status</th>
+                    <th class="pl-8 py-4 font-medium text-xl text-left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border border-gray-200">
+                  <td class="pl-8 py-4 font-normal text-lg">1</td>
+                  <td class="pl-4 py-4 font-normal text-lg">Angular Setup</td>
+                  <td class="pl-4 py-4 flex gap-3">
+                    <img src="../../../assets/images/michael-icon.png" class="w-12 h-12">
+                    <img src="../../../assets/images/michelle-icon.png" class="w-12 h-12">
+                  </td>
+                  <td class="pl-4 py-2 font-bold text-lg font-bold completed-status">Completed</td>
+                  <td class="pl-4 pb-8 flex gap-4">
+                    <button><img src="../../../assets/images/view-icon.png" class="w-8 h-6"></button>
+                    <button><img src="../../../assets/images/edit-icon.png" class="w-8 h-6"></button>
+                    <button><img src="../../../assets/images/delete-icon.png" class="w-8 h-6"></button>
+                </td>
+                </tr>
+                <tr class="border border-gray-200"> 
+                    <td class="pl-8 py-4 font-normal text-lg">2</td>
+                    <td class="pl-4 py-4 font-normal text-lg">Index.js API Calls</td>
+                    <td class="pl-4 py-4 flex gap-3">
+                        <img src="../../../assets/images/michael-icon.png" class="w-12 h-12">
+                        <img src="../../../assets/images/michelle-icon.png" class="w-12 h-12">
+                      </td>
+                    <td class="pl-4 py-2 font-bold text-lg font-bold completed-status">Completed</td>
+                    <td class="pl-4 pb-8 flex gap-4">
+                        <button><img src="../../../assets/images/view-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/edit-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/delete-icon.png" class="w-8 h-6"></button>
+                    </td>
+                </tr>
+                <tr class="border border-gray-200">
+                    <td class="pl-8 py-4 font-normal text-lg">3</td>
+                    <td class="pl-4 py-4 font-normal text-lg">CRUD Operation</td>
+                    <td class="pl-4 py-4 flex gap-3">
+                        <img src="../../../assets/images/michael-icon.png" class="w-12 h-12">
+                        <img src="../../../assets/images/michelle-icon.png" class="w-12 h-12">
+                      </td>
+                    <td class="pl-4 py-2 font-bold text-lg completed-status">Completed</td>
+                    <td class="pl-4 pb-8 flex gap-4">
+                        <button><img src="../../../assets/images/view-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/edit-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/delete-icon.png" class="w-8 h-6"></button>
+                    </td>
+                </tr>
+                <tr class="border border-gray-200">
+                    <td class="pl-8 py-4 font-normal text-lg">4</td>
+                    <td class="pl-4 py-4 font-normal text-lg">Angular with Dotnet</td>
+                    <td class="pl-4 py-4 flex gap-3">
+                        <img src="../../../assets/images/michael-icon.png" class="w-12 h-12">
+                        <img src="../../../assets/images/michelle-icon.png" class="w-12 h-12">
+                      </td>
+                    <td class="pl-4 py-2 font-bold text-lg pending-status">Pending</td>
+                    <td class="pl-4 pb-8 flex gap-4">
+                        <button><img src="../../../assets/images/view-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/edit-icon.png" class="w-8 h-6"></button>
+                        <button><img src="../../../assets/images/delete-icon.png" class="w-8 h-6"></button>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>          
+    </div>
 </div>
+
+
+<div class="modal-backdrop" *ngIf="showModal"></div>
+<div class="modal fade show d-block" *ngIf="showModal" (click)="onModalClick($event)">
+    <div class="modal-dialog p-8 rounded-lg shadow" (click)="$event.stopPropagation()">
+      <div class="modal-content">
+        <div class="modal-header flex">
+          <h1 class="font-bold text-2xl">Add Module</h1>
+          <button type="button" class="flex ml-auto" (click)="closeModal()">
+            <img src="../../../assets/images/close-icon.png" class="w-8 h-8">
+          </button>
+        </div>
+        <div class="modal-body mt-8">
+          <form>
+            <div class="flex flex-col mb-6">
+              <label class="form-label font-bold">Module Name</label>
+              <input type="text" class="form-control border border-gray-300 shadow rounded-md p-2">
+            </div>
+            <div class="flex flex-col mb-6">
+                <label class="form-label font-bold">Assign to</label>
+                <select name="assign-to" id="assign-to" class="assign-to border border-gray-300 shadow rounded-md">
+                    <option value="assign-all">Assign to all</option>
+                    <option value="michael">Michael Mcgee</option>
+                    <option value="michelle">Michelle Montana</option>
+                </select>
+              </div>
+            <div class="flex flex-col">
+              <label class="form-label font-bold">Description</label>
+              <textarea class="form-control border border-gray-300 shadow rounded-md p-4"></textarea>
+            </div>
+            <div class="module-button-container mt-12 border border-gray-300 shadow rounded-md p-2 w-6/12 mx-auto flex justify-center">
+                <button class="pl-6 pr-6 m-0">
+                  <span class="text-white text-lg">Submit</span>
+                </button>
+              </div>              
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

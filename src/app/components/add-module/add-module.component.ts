@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-add-module',
   templateUrl: './add-module.component.html',
   styleUrls: ['./add-module.component.css']
 })
-export class AddModuleComponent implements OnInit {
+export class AddModuleComponent {
+  showModal = false;
 
-  constructor() { }
 
-  ngOnInit(): void {
+  openModal() {
+    this.showModal = true;
   }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+  onModalClick(event: MouseEvent) {
+    this.closeModal();
+  }
+  
 
 }
